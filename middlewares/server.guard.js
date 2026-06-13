@@ -59,7 +59,7 @@ export async function limitRequests(request, response, next) {
     } catch (error) {
         return response.status(500).json({
             success: false,
-            error: error.message,
+            error: `Internal Server Error: ${error instanceof Error ? error.message : error}`,
         });
     }
 }

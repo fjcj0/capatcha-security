@@ -1,0 +1,4 @@
+.Ds_Store
+.env
+node_modules
+tmp
